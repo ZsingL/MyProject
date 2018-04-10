@@ -1,0 +1,36 @@
+<!--pages/taskDetail/taskDetail.wxml-->
+<view class='m5'>
+    <view class='taskTitle mt5'>
+        <text>任务标题：</text>
+        <text>{{taskDetail.title}}</text>
+    </view>
+
+    <view class='mt5'>
+        <text>任务地点：</text>
+        <text>{{taskDetail.address}}</text>
+    </view>
+
+    <view class='mt5'>
+        <text>任务时长：</text>
+        <text>{{taskDetail.taskHours}}</text>小时
+    </view>
+
+    <view class='mt5'>
+        <text>任务酬劳：</text>
+        <text>￥{{taskDetail.taskMoney}}</text>
+    </view>
+
+    <view class='taskDec mt5'>
+        <text>任务内容:</text>
+        <view>{{taskDetail.desc}}</view>
+    </view>
+
+    <view>
+        <image src='{{taskDetail.taskPic}}'></image>
+    </view>
+    <view class='get-task'>
+        <view class='submit'>
+            <button class="weui-btn fl bluebtn" plain="" bindtap="taskGet">领取任务</button>
+        </view>
+    </view>
+</view>

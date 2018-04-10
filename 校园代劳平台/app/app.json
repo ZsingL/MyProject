@@ -1,0 +1,47 @@
+{
+    "pages": [
+        "pages/home/home",
+        "pages/shouye/shouye",
+        "pages/mine/mine",
+        "pages/myTask/myTask",
+        "pages/taskAdd/taskAdd",
+        "pages/taskSquare/taskSquare",
+        "pages/example/index",
+        "pages/example/input/input",
+        "pages/example/uploader/uploader",
+        "pages/example/button/button",
+        "pages/taskDetail/taskDetail"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#4682b4",
+        "navigationBarTitleText": "校园代劳平台",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "color": "black",
+        "backgroundColor": "#fff",
+        "selectedColor": "#1296db",
+        "borderStyle": "white",
+        "list": [
+            {
+                "selectedIconPath": "pages/images/homeB.png",
+                "iconPath": "pages/images/home.png",
+                "pagePath": "pages/home/home",
+                "text": "首页"
+            },
+            {
+                "selectedIconPath": "pages/images/order.png",
+                "iconPath": "pages/images/orderB.png",
+                "pagePath": "pages/myTask/myTask",
+                "text": "我的任务"
+            },
+            {
+                "selectedIconPath": "pages/images/mineB.png",
+                "iconPath": "pages/images/mine.png",
+                "pagePath": "pages/mine/mine",
+                "text": "个人中心"
+            }
+        ]
+    }
+}

@@ -1,0 +1,223 @@
+/**app.wxss**/
+@import 'weui.wxss';
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+/* 首页 */
+.login {
+    margin: 0 20px 0 20px;
+}
+.login view{
+    position: relative;
+    top: 22px;
+    color: #bbb;
+}
+.login input{
+    padding-left: 40px;
+    padding-bottom: 5px;
+    border-bottom:1px solid #ddd;
+}
+.loginbtn{
+    margin: 20px 20px 0 20px;
+}
+.loginbtn button{
+    background: #4682b4;
+    color: #fff;
+}
+.bottom-tip{
+   margin-top: 10px;
+}
+.bottom-tip view{
+    text-align: center;
+    color: #bbb;
+}
+
+.inputStyle{
+  background: #dddddd;
+  height: 80rpx;
+  color: #333;
+  padding-left: 30rpx;
+  font-size: 30rpx;
+  border-radius: 10rpx;
+}
+.bottom-not{
+  border-bottom: none;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+
+.fl.mt15,.mt15 {
+  margin-top: 15px;
+}
+.btn{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.bluebtn{
+    background: #4682b4;
+    color: white;
+}
+.m5{
+    margin: 5px;
+}
+.mt5{
+    margin-top: 5px;
+}
+.tc{
+    text-align: center;
+}
+.titleStyle{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+.task-list{
+    border-bottom: 1px solid #dddddd;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    max-height: 100px;
+    overflow: scroll;
+
+}
+.task-list text:first-child{
+    border: 1px solid #333;
+    padding: 1px 5px;
+    border-radius: 4px;
+    margin-right: 5px;
+    font-size: 12px;
+}
+.taskPusher{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.taskPusher image{
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+}
+.taskPusher text{
+    margin-top: 10rpx;
+    font-size: 10px;
+}
+.pickerStyle{
+    float: right;
+    border-radius: 8px;
+    margin-right: 20px;
+    border: 1px solid #333;
+    padding: 0 20px;
+    color: #333;
+}
+.task-info{
+    flex: 3;
+}
+.task-info view:first-child{
+    font-size: 16px;
+    font-weight: bold;
+}
+.task-info view:nth-child(2){
+    color: #333;
+    text-indent: 1em;
+    text-align: left;
+}
+.task-info view text{
+    border: 1px solid #333;
+    padding:2px 5px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: normal;
+}
+.task-money{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #4682b4;
+}
+.photoUpload{
+    margin: 5px;
+    height: 50px;
+    border-bottom: 1px solid #ddd;
+}
+.photoUpload view{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin:0 5px;
+}
+
+/*详情  */
+.taskDec view{
+    text-indent: 2em;
+}
+.submit {
+  display: flex;
+}
+.submit button {
+  flex: 1;
+}
+.get-task{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background: white;
+    padding-bottom: 10px;
+    left: 0;
+}
+/*我的任务  */
+.task-type{
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px dashed #ddd;
+    padding: 5px 0 10px 0;
+}
+/*个人中心  */
+.mine-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #4682b4;
+
+}
+.mine-info image{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+
+}
+.mine-info text{
+    color: white;
+}
+.telephone{
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-top: 10px;
+    padding:5px;
+}
+.telephone text{
+    float: right;
+    color: #aaa;
+}
+.telephone image{
+    width: 15px;
+    height: 15px;
+    float: right;
+    margin-top: 5px;
+    margin-left: 5px;
+}

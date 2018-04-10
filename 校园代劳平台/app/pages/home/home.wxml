@@ -1,0 +1,12 @@
+<!--pages/home/home.wxml-->
+<view>
+    <view  class='titleStyle'>
+        <text>广东金融学院</text>
+    </view>
+    <view class='main'>
+
+        <navigator url='../taskAdd/taskAdd' class='release-task'>发布任务</navigator>
+        <navigator url='../taskSquare/taskSquare' class='task-square'>任务广场</navigator>
+
+    </view>
+</view>

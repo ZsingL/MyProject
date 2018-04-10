@@ -1,0 +1,28 @@
+<!--pages/order/order.wxml-->
+<view class='m5'>
+    <view>
+        <view class='task-type'>
+            <text>我发布的：</text>
+        </view>
+
+        <block wx:for="{{publishTaskList}}" wx:key="key">
+            <view id='{{item._id}}' class='task-list' bindtap='taskDetail'>
+                <text>{{publishStatusArr[item.taskStatus-1]}}</text>
+                <text>{{item.title}}</text>
+            </view>
+        </block>
+    </view>
+
+    <view>
+        <view class='task-type'>
+            <text>我领取的：</text>
+        </view>
+
+        <block wx:for="{{getTaskList}}" wx:key="key">
+            <view id='{{item._id}}' data-status='{{item.taskStatus}}' class='task-list' bindtap='taskDetail'>
+                <text>{{getStatusArr[item.taskStatus-2]}}</text>
+                <text>{{item.title}}</text>
+            </view>
+        </block>
+    </view>
+</view>

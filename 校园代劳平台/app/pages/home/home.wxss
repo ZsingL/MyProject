@@ -1,0 +1,21 @@
+/* pages/home/home.wxss */
+.main {
+  width: 320px;
+  height: 416px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  text-align: center;
+  color: white;
+  /* align-items: center;  */
+}
+.release-task,.task-square {
+  flex: 1;
+  line-height: 208px;
+  font-size: 30px;
+  background: #99ccff;
+  border-bottom: 1px solid #fff;
+}
+ .task-square {
+     background: #ccccff;
+} 

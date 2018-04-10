@@ -1,0 +1,12 @@
+<!--pages/mine/mine.wxml-->
+<view>
+    <view class='mine-info'>
+        <image src='../images/gg.jpg'></image>
+        <text>小哥哥</text>
+    </view> 
+
+    <view class='telephone'>
+        <image src='../images/jiantou.png'></image>    
+        联系电话：<text>18620594647</text>
+    </view>
+</view>

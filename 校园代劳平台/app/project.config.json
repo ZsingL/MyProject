@@ -1,0 +1,65 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": false,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.5.3",
+	"appid": "wx35c64fb99ae2af91",
+	"projectname": "%E6%A0%A1%E5%9B%AD%E4%BB%A3%E5%8A%B3%E5%B9%B3%E5%8F%B0",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/home/home",
+					"query": ""
+				},
+				{
+					"id": 1,
+					"name": "任务广场",
+					"pathName": "pages/taskSquare/taskSquare",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "任务详情页",
+					"pathName": "pages/taskDetail/taskDetail",
+					"query": ""
+				},
+				{
+					"id": 3,
+					"name": "我的任务",
+					"pathName": "pages/myTask/myTask",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/mine/mine",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发布",
+					"pathName": "pages/taskAdd/taskAdd",
+					"query": ""
+				}
+			]
+		}
+	}
+}

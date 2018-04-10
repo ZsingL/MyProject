@@ -1,0 +1,17 @@
+<!--pages/taskSquare/taskSquare.wxml-->
+<view class='titleStyle'>
+    <text>任务广场</text>
+</view>
+<block wx:for="{{taskInfo}}" wx:key="key">
+    <view class='task-list' id='{{item._id}}' bindtap="taskDetail">
+        <view class='taskPusher'>
+            <image src='{{item.headPic}}'></image>
+            <text>{{item.nickName}}</text>
+        </view>
+        <view class='task-info'>
+            <view><text>{{taskTypeArr[item.taskType]}}</text>{{item.title}}</view>
+            <view>{{item.desc}}</view>
+        </view>
+        <view class='task-money'>￥{{item.taskMoney}}</view>
+    </view>
+</block>

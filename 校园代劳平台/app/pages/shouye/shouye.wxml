@@ -1,0 +1,17 @@
+<!--pages/shouye/shouye.wxml-->
+<view class='titleStyle'>
+    <text>广东金融学院</text>
+</view>
+<image src='../images/gduf.jpg'></image>
+<view class='login'>
+    <view>学号:</view>
+    <input bindinput='getAccount'/>
+    <view>密码:</view>
+    <input type='password' bindinput='getPasswd'/>
+</view>
+<view class='loginbtn' style='margin-top:20px'>
+    <button bindtap='loginF'>登录</button>
+</view>
+<view class='bottom-tip'>
+    <view>点击输入教务系统账号密码</view>
+</view>

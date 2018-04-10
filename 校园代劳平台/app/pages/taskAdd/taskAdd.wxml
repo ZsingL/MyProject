@@ -1,0 +1,47 @@
+<!--pages/taskAdd/taskAdd.wxml-->
+<view class='m5'>
+    <text>任务类型</text>
+    <picker mode="selector" range='{{taskTypeArr}}' value='{{taskType}}' bindchange='chooseTaskType' class='pickerStyle'>
+        <text>{{taskTypeArr[taskType]}}</text>
+    </picker>
+</view>
+        <view class="weui-cells weui-cells_after-title bottom-not">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="请输入任务标题" bindinput='titleInput' />
+                </view>
+            </view>
+        </view>
+
+<view class="weui-cells weui-cells_after-title mt15">
+    <view class="weui-cell">
+        <view class="weui-cell__bd">
+              <textarea class="weui-textarea" placeholder="请输入任务内容" style="height: 3.3em" maxlength='140' bindinput='descTextarea' />
+              <view class="weui-textarea-counter"><text>{{inputNum}}</text>/140</view>
+        </view>
+    </view>
+</view>
+ <view class="photoUpload">
+        <!-- <view wx:for='taskImage' wx:key="key">
+            <image src='{{item}}'></image>
+        </view> -->
+        <view class="photoAdd" style='background:url("../images/photo_add.png")  round' bindtap='uploadImage'></view>
+        <view class="photoRemove" style='background:url("../images/photo_remove.png") round' bindtap='removeImage'></view>
+        <image src='{{taskImage}}' style='width:50px;height:50px' bindtap='previewImg'></image>
+ </view>
+<view class='m5'>
+    <text>任务地点</text>
+    <input class='inputStyle mt5' placeholder='请输入任务地点' bindinput='addressInput' />
+</view>
+<view class='m5'>
+    <text>任务时长（单位：小时）</text>
+    <input type='number' class='inputStyle mt5' placeholder='请输入任务时长' bindinput='hoursInput'/>
+</view>
+<view class='m5'>
+    <text>任务酬劳（单位：元）</text>
+    <input type='number' class='inputStyle mt5' placeholder='请输入任务酬劳' bindinput='moneyInput'/>
+</view>
+<view class='submit'>
+  <button class="weui-btn fl mt15 btn" type="default" plain="" bindtap='cancelPublish'>取消发布</button>
+  <button class="weui-btn fl btn" type="primary" plain="" bindtap='taskPublish' style='background:#4682b4'>立即发布</button>
+</view>
